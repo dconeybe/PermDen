@@ -3,12 +3,21 @@
   "version": "1.0.0",
   "description": "A simple TypeScript counter application",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "tsc && http-server -p 0"
+    "format": "prettier --write \"**/*.{ts,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,json,md}\"",
+    "lint": "eslint .",
+    "start": "tsc && http-server -p 0",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.5.0",
     "http-server": "^14.1.1",
+    "prettier": "^3.8.4",
+    "typescript-eslint": "^8.61.0",
     "typescript": "^5.3.3"
   }
 }
