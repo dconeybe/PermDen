@@ -9,7 +9,7 @@
     "format": "prettier --write \"**/*.{ts,json,md}\"",
     "format:check": "prettier --check \"**/*.{ts,json,md}\"",
     "lint": "eslint .",
-    "start": "tsc && http-server -p 0",
+    "start": "tsc && http-server -a 127.0.0.1 -p 0",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
