@@ -1,3 +1,9 @@
+import { initializeApp } from "firebase/app";
+
+import { firebaseConfig } from "./firebase_config";
+
+initializeApp(firebaseConfig);
+
 let count: number = 0;
 
 const button = document.getElementById("counter-btn");
